@@ -1,0 +1,80 @@
+/* QRScanner.css */
+.qr-scanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 90%; /* Ensure it is responsive within the viewport */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.scanner-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.camera-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.camera-toggle:hover {
+  background-color: #0056b3;
+}
+
+.camera-preview {
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.result a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.result a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .qr-scanner {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .scanner-title {
+    font-size: 20px;
+  }
+
+  .camera-toggle {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .result {
+    font-size: 14px;
+  }
+}

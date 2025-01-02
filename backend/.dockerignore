@@ -1,0 +1,10 @@
+# Exclude the virtual environment folder and all its contents
+env/
+
+# Ignore Python cache files
+*.pyc
+_pycache_/
+
+# Ignore media and static files
+media/
+static/

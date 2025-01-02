@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: white; /* White background */
+  color: black; /* Black text for contrast */
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread brand and links */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; /* White background for the navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: black; /* Black text for the brand */
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: black; /* Black text for links */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: lightgray; /* Light gray hover effect */
+  color: black;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items in a column for mobile */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Add space between links */
+  }
+}
