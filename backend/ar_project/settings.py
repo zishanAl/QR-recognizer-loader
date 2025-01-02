@@ -37,7 +37,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://qr-recogniser.vercel.app",     # For local development
+    "https://qr-recognizer-loader.vercel.app",     # For local development
 ]
 # CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'ar_project.urls'
