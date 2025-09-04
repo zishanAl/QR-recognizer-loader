@@ -105,7 +105,7 @@ App runs at:
 👉 Backend: http://localhost:5000
 
 
-###📂 Project Structure
+### 📂 Project Structure
 ```bash
 qr-recognition-ar-loader/
 │── frontend/         # React + AR.js + Three.js
